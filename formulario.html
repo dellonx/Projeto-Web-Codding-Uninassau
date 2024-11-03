@@ -11,8 +11,40 @@
         <h1>Formulários</h1>
     </header>
     <main>
+        <h2>Tipos de Formulários</h2>
+        <p>Tenha em mente que existem muitos tipos, mas fique tranquilo. Veremos um de cada vez</p>
         <form>
-            <input type="password" placeholder="Digite seu e-mail">
+            <h3>Na prática</h3>
+            <p>Texto</p>
+            <input type="text" placeholder="Digite seu texto"> <br> <!--Com o "placeholder, você consegue colocar um texto indicando dentro da caixa"-->
+            <label for="texto">Digite seu texto</label> 
+            <input id="texto" type="text"> <br><!--Agora, com a Tag "label", você coloca a informação ao lado, use dependendo do seu gosto pessoal! ;)-->
+            <p>Email</p>
+            <input type="email" placeholder="Digite seu email"> <br> <!--Dentro do type, coloque "email", simples-->
+            <p>Senhas</p>
+            <label for="senha">Digite sua senha</label> 
+            <input id="senha" type="password"> <br> <!--Para senhas, use o type "password"-->
+            <p>Números</p>
+            <label for="numero">Digite sua Idade</label>
+            <input id="numero" type="number" max="17" min="5"> <!--Para números, idade, qualquer coisa que envolva apenas números, digite o type"Number"-->
+            <p>Escolha o melhor jogador Brasileiro</p>
+            <input name="melhor" type="radio"> Ronaldinho
+            <input name="melhor" type="radio"> Romario
+            <input name="melhor" type="radio"> Neymar
+            <input name="melhor" type="radio"> Pelé
+            <input name="melhor" type="radio"> Ronaldo <br><!--Escolha os Jogadores usando o type"radio", dessa forma você consegue escolher os jogadores -->
+            <p>Escolha o melhor Jogo que você já jogou</p>
+            <select>
+                <option>FIFA</option>
+                <option>God of War</option>
+                <option>Free Fire</option>
+                <option>CS Go</option>
+                <option>Efootball</option> <!--com a Tag "select" e as "options", você consegue fazer essa caixa de escolha de uma forma mais dinamica-->
+            </select> <br>
+            <p>Feedback</p>
+            <textarea placeholder="Digite seu Feedback!! :)"></textarea>  <br> <!--Com a tag "textarea", você consegue colocar uma caixa para coletar o feedback das pessoas-->
+            <button type="submit">Enviar</button> <!--Use o "type="submit" para enviar informações-->
+            <button type="reset">Limpar Dados</button> <!--Use o "type="reset" para retirar informações-->
         </form>
     </main>
 </body>
